@@ -1,0 +1,175 @@
+/* Custom styling for Move It website */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar Enhancements */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0d6efd !important;
+}
+
+.navbar-brand:hover {
+  color: #0052cc !important;
+}
+
+/* Hero Section */
+.display-4 {
+  background: linear-gradient(135deg, #0d6efd, #198754);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Feature Section */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #0d6efd, #198754) !important;
+}
+
+.feature h3 {
+  color: #212529;
+  font-weight: 600;
+}
+
+.icon-link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #0052cc;
+}
+
+/* Carousel Enhancements */
+.carousel {
+  margin: 3rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #0d6efd;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Button Enhancements */
+.btn-primary {
+  background: linear-gradient(135deg, #0d6efd, #0052cc);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0052cc, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13,110,253,0.3);
+}
+
+.btn-outline-secondary {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108,117,125,0.3);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa;
+  border-radius: 1rem 1rem 0 0;
+}
+
+footer h5 {
+  color: #495057;
+  font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .carousel-item img {
+    height: 250px;
+  }
+  
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image Hover Effects */
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.02);
+}
+
+/* Custom Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.feature:nth-child(3) {
+  animation-delay: 0.4s;
+}

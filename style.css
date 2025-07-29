@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #ee7fd4, #4395e7);
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.intro {
+  text-align: center;
+
+  padding: 60px 20px 20px;
+  color: #153d6e;
+}
+.intro h1 {
+  font-size: 3rem;
+  font-family: "Playwrite HU", cursive;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 40px;
+}
+
+.image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about,
+.projects,
+.contact {
+  padding: 60px 20px;
+  background-color: #ffffffcc;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 15px;
+  font-size: 28px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+  transform: scale(1.1);
+}
+
+.text-center {
+  text-align: center;
+}
